@@ -1,333 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content=
-		"width=device-width, initial-scale=1">
-	<title>hk</title>
-	<style>
-	font.big {
-		line-height: 1.8;
-		font-size: 20px;
-	  } 
-      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hk</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Header styles */
+        #header {
+            background-color: #FFC0CB;
+            padding: 10px 0;
+            text-align: center;
+        }
+        #header a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        /* Section styles */
+        table[id^="home"], table[id^="about"], table[id^="projects"], table[id^="footer"] {
+            width: 100%;
+            padding: 20px;
+            margin-top: 10px;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+        }
+        table[id^="home"] h3, table[id^="about"] h3, table[id^="projects"] h3 {
+            font-size: 24px;
+            color: #ffffff;
+        }
+        table[id^="about"] img, table[id^="projects"] img {
+            max-width: 100%;
+            height: auto;
+            float: right;
+            margin-left: 20px;
+        }
+        table[id^="about"] .big {
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        /* Footer styles */
+        #footer {
+            background-color: #FFC0CB;
+            text-align: center;
+            padding: 10px 0;
+        }
+        #footer a {
+            text-decoration: none;
+            color: #000000;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+    </style>
 </head>
-
 <body>
-	<!--Header(start)-->
-	<table id="header" border="0" width="100%"
-		cellpadding="2" cellspacing="0" bgcolor="#FFC0CB">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="100%" align="center">
-					<tr>
-						<td>
-							<font face="Didot" size="5">
-								<b>Haniya Konain</b>
-							</font>
-						</td>
-						<td width="15%">	
-						</td>
-						<td>
-							<a href="#home" style="text-decoration:none">
-								<font face="Verdana" size="5" color=black>
-									Home
-								</font>
-							</a>
-						</td>
-                        <td>
-							|
-						</td>
 
-						<td>
-							<a href="#about" style="text-decoration:none">
-								<font face="Verdana" size="5" color=black>
-									About
-								</font>
-							</a>
-						</td>
+<!-- Header -->
+<table id="header">
+    <tr>
+        <td>
+            <font face="Didot" size="5">
+                <b>Haniya Konain</b>
+            </font>
+        </td>
+        <td>
+            <a href="#home">Home</a>
+        </td>
+        <td>
+            |
+        </td>
+        <td>
+            <a href="#about">About</a>
+        </td>
+        <td>
+            |
+        </td>
+        <td>
+            <a href="#projects">Projects</a>
+        </td>
+    </tr>
+</table>
 
-						<td>
-							|
-						</td>
+<!-- Home Section -->
+<table id="home">
+    <tr>
+        <td>
+            <h3>Hi! This is considered as my first web page, there is so much more I am learning and need to append in this, till then have a look on it. &hearts;</h3>
+        </td>
+    </tr>
+</table>
 
-						<td>
-							<a href="#projects" style="text-decoration:none">
-								<font face="Verdana" size="5" color=black>
-									Projects
-								</font>
-								<td>
-									|
-								</td>
-							</a>
-						</td>
-                     </tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Header(end)-->
+<!-- About Section -->
+<table id="about">
+    <tr>
+        <td>
+            <font face="Verdana" size="7" color="#00FFFF">About me</font>
+            <hr color="#00FFFF" width="90%">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="me.jpg" alt="My Image" width="200">
+            <font face="Verdana" size="4" color="white" class="big">
+                <i>Glad that you are reading this, here is a quick story of me. There is always a student in engineering course who knew coding before it was taught, yep, one of them is me, I started learning it 2 months before college started and learning it everyday. I am a b.tech ai&ds, 2nd year, 1st sem student. Currently learning css, java and r language. I have learnt intermediate level of C-Language, python. I like to experiment in all the fields like oops cloud computing so that I can at least get specialized in one of them. Apart from this I like cats, tea and music. That's it for now, <b>Thanks.</b></i>
+            </font>
+        </td>
+    </tr>
+</table>
 
-	<!--Home(start)-->
-	<table id="home" border="1" width="100%"
-		cellpadding="20" cellspacing="0" bgcolor="black">
-		<tr>
-			<td>
-				<table border="double {border-style: double;}" cellpadding="15"
-					cellspacing="0" width="90%" align="center">
-					<tr>
-						<td align="center" valign="middle">
-							<h3>
-								<font face="Times New Roman"
-									size="6" color="#ffffff">
-									Hi! This is considered as my first web page, there is so much more I am learning and need to append in this, till then have a look on it. &hearts;
-								</font>
-							</h3>
+<!-- Projects Section -->
+<table id="projects">
+    <tr>
+        <td>
+            <font face="Verdana" size="7" color="#00FFFF">Projects</font>
+            <hr color="#00FFFF" width="100%">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="ei.jpg" alt="My Image" width="200">
+            <font face="Verdana" size="4" color="white">
+                <ul>
+                    <li><b>Electronics Internship</b>
+                        <ul>
+                            <li>laser security system</li>
+                            <li>logic gates</li>
+                            <li>led blinking device</li>
+                        </ul>
+                    </li>
+                    <li><b>to be added</b></li>
+                    <li><b>to be added</b></li>
+                </ul>
+            </font>
+        </td>
+    </tr>
+</table>
 
-							<h2>
-								<font face="Verdana" size="6"
-									color="#4CAF50">
-								</font>
-							</h2>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Home(end)-->
+<!-- Footer Section -->
+<table id="footer">
+    <tr>
+        <td>
+            <a href="https://www.linkedin.com/in/haniya-konain-210882251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+        </td>
+        <td>
+            |
+        </td>
+        <td>
+            <a href="https://github.com/haniyakonain">GitHub</a>
+        </td>
+        <td>
+            |
+        </td>
+        <td>
+            <a href="https://x.com/HaniyaKonain?t=aREUZbJezBH7hPaChkSeAw&s=09">Twitter</a>
+        </td>
+        <td>
+            |
+        </td>
+        <td>
+            <a href="https://instagram.com/haniya_konain?utm_source=qr&igshid=MThlNWY1MzQwNA==">Instagram</a>
+        </td>
+        <td>
+            |
+        </td>
+        <td>
+            <a href="mailto:haniyakonain94@gmail.com">Email</a>
+        </td>
+    </tr>
+</table>
 
-
-	<!--About(start)-->
-	<table id="about" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="black">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="80%" align="center">
-					<tr>
-						<td height="180" align="center"
-							valign="middle" colspan="2">
-							<font face="Verdana" size="7"
-								color="#00FFFF">
-								About me 
-							</font>
-							<hr color="#00FFFF" width="90">
-						</td>
-					</tr>
-                    
-					<tr>
-						<td width="10%">
-                            <img src="me.jpg" alt="My Image" width="200" align="right">
-						</td>
-
-						<td width="80%">
-							<font face="Verdana" size="4"
-								color="white" class="big">
-
-								<i>Glad that you are reading this, here is a quick story of me. There is always a student in engineering course who knew coding before it was thaught, yep, one of them is me, I started learning it 2 months before college started and learning it everyday. I am a b.tech ai&ds, 2nd year, 1st sem student. Curently learning css, java and r language. I have learnt intermediate level of C-Language, python. I like to experiment in all the fields like oops cloud computing so that I can at least get specialized in one of them. Apart from this I like cats, tea and music.That's it for now,<b>Thanks.</b></i>
-							    
-							</font>
-						</td>
-					</tr>
-				</table>
-				<hr color="black">
-				<hr color="black">
-				<hr color="black">
-			</td>
-		</tr>
-	</table>
-	<!--About(end)-->
-
-
-
-	<!--projects(start)-->
-	<table id="projects" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="black">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="90%" align="center">
-					<tr>
-						<td height="100" align="center" valign="middle">
-							<font face="Verdana" size="7" color="#00FFFF">
-								projects
-								<hr color="#00FFFF" width="100">
-							</font>
-						</td>
-					</tr>
-					<tr>
-						<td>
-                            <img src="ei.jpg" alt="My Image" width="200" align="right">
-							<font face="Verdana" size="4" color="white">
-							    <ul>
-									<li>
-										<i><b>Electronics Internship.</b>
-						                	<ul>
-						  				    	<li>
-												laser security system.
-											  </li>
-											      <li>
-												logic gates.
-												<li>
-													led blinking device.	
-												</li>
-											</li>
-							           </ul>
-									</li>
-										<li>
-										<hr color="black">
-										<hr color="black">
-										<hr color="black">
-										<b>to.</b>
-							      <ul>
-									<li>
-										be.
-									</li>
-									 <li>
-										added.
-									</li>
-							       </ul>
-								   </li>
-								   <li>
-									<hr color="black">
-									<hr color="black">
-									<hr color="black">
-								   <b>to.</b>
-									<ul>
-									<li>
-										be.
-										</li>
-											<li>
-												added.
-											</li>
-										</ul>
-											<hr color="black">
-											<hr color="black">
-											<hr color="black">
-									   </li>
-							       
-							 </i>
-							</font>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--projects(end)-->
-
-
-	<!--Footer1(start)-->
-	<table id="footer" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="#FFC0CB">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="100%" align="center">
-					<tr>
-						<td>
-							|
-						</td>
-						<td width="22%" valign="top">
-							<b>LinkedIn</b>
-							<a href="https://www.linkedin.com/in/haniya-konain-210882251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="text-decoration:none">
-								➲
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td width="22%" valign="top">
-							<b>GitHub</b>
-							<a href="https://github.com/haniyakonain" style="text-decoration:none">
-								➲ 
-							</a>
-						</td>
-					
-
-						<td>
-							|
-						</td>
-
-						<td width="22%" valign="top">
-							<b>Twitter</b>
-							<a href="https://x.com/HaniyaKonain?t=aREUZbJezBH7hPaChkSeAw&s=09" style="text-decoration:none">
-								➲
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td width="22%" valign="top">
-							<b>Instagram</b>
-							<a href="https://instagram.com/haniya_konain?utm_source=qr&igshid=MThlNWY1MzQwNA==" style="text-decoration:none">
-								➲
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td width="22%" valign="top">
-							<b>Email</b>
-							<a href="mailto:haniyakonain94@gmail.com" style="text-decoration:none">
-								➲
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Footer1(end)-->
-
-
-	<!--Footer2(start)-->
-	<table id="footer" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="black">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="90%" align="center">
-					<tr>
-						<td width="80%" valign="top">
-							<font face="Verdana"
-								color="#00FFFF" size="5">
-								©Copyright 2023 by nobody. 
-								All rights reserved.
-							</font>
-						</td>
-
-						<td width="10%">
-							<font face="arial" color="black" size="5">
-								<a href="#header" style="text-decoration:none">
-									<font face="Verdana" color="#FFB6C1" size="6">
-										<b>TOP</b>
-									</font>
-								</a>
-							</font>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Footer2(end)-->
+<!-- Copyright -->
+<table id="footer" style="background-color: black;">
+    <tr>
+        <td>
+            <font face="Verdana" color="#00FFFF" size="5">© Copyright 2023 by nobody. All rights reserved.</font>
+        </td>
+        <td>
+            <a href="#header">
+                <font face="Verdana" color="#FFB6C1" size="6"><b>TOP</b></font>
+            </a>
+        </td>
+    </tr>
+</table>
 
 </body>
-
 </html>
